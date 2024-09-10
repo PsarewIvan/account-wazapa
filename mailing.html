@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Добро пожаловать</title>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="layout">
+            <header class="header">
+                <div class="header__top">
+                    <div class="name-block">
+                        <div class="name-wrapper">
+                            <h1 class="name">WCOLD 1 для рассылок W</h1>
+                            <a class="mail" href="mailto:wcold@wazapa.ru"
+                                >wcold@wazapa.ru</a
+                            >
+                        </div>
+                        <div class="auth auth_ok js-auth-status-ok">
+                            <div class="auth__icon js-icon-ok"></div>
+                            <span class="auth__text">Телефон авторизован</span>
+                        </div>
+                        <div
+                            class="auth auth_not-ok none js-auth-status-not-ok"
+                        >
+                            <span class="auth__icon js-icon-record"></span>
+                            <span class="auth__text"
+                                >Телефон не авторизован</span
+                            >
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button sign-out-button tooltip-trigger js-tooltip-trigger"
+                        type="button"
+                    >
+                        <div class="js-icon-sign"></div>
+                        <span class="tooltip js-tooltip">Выйти</span>
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <nav class="nav">
+                    <a class="nav_logo-link" href="index.html"
+                        ><img class="nav__logo-icon" src="./logo.svg"
+                    /></a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="index.html">
+                                <span
+                                    class="nav__page-icon js-icon-home"
+                                ></span>
+                                <span>Главная</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="licenses.html">
+                                <span
+                                    class="nav__page-icon js-icon-list"
+                                ></span>
+                                <span>Лицензии</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="payments.html">
+                                <span
+                                    class="nav__page-icon js-icon-files"
+                                ></span>
+                                <span class="nav__page-link-text_payments"
+                                    >Платежи<span> и документы</span></span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="chats.html">
+                                <span
+                                    class="nav__page-icon js-icon-chats"
+                                ></span>
+                                <span>Чат-боты</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a
+                                class="nav__page-link nav__page-link_active"
+                                href="mailing.html"
+                            >
+                                <span
+                                    class="nav__page-icon js-icon-chat-with-text"
+                                ></span>
+                                <span>Рассылки</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <section class="section">
+                    <h2 class="section-main-title js-mailing-title">
+                        Рассылки
+                    </h2>
+                    <h2 class="section-main-title js-mailing-title-new none">
+                        Новая рассылка
+                    </h2>
+                </section>
+                <section class="section js-mail-section">
+                    <div class="mailing__buttons">
+                        <button
+                            class="button button-s button-primary js-mailing-create"
+                            type="button"
+                        >
+                            Создать рассылку
+                        </button>
+                        <button
+                            class="button button-s button-primary js-mailing-create-image"
+                            type="button"
+                        >
+                            Создать рассылку с картинкой
+                        </button>
+                    </div>
+                    <h2 class="section-title">Список рассылок</h2>
+                    <div class="mailing-table">
+                        <div class="mailing-table__header">
+                            <div class="mailing-table__header-cell">№</div>
+                            <div class="mailing-table__header-cell">
+                                Старт рассылки
+                            </div>
+                            <div class="mailing-table__header-cell">
+                                Получатели
+                            </div>
+                        </div>
+                        <div class="mailing-table__row-wrapper">
+                            <div class="mailing-table__row">
+                                <div class="mailing-table__cell-wrapper_first">
+                                    <div class="mailing-table__cell">
+                                        252604
+                                    </div>
+                                    <div class="mailing-table__cell">
+                                        25.09.2024, 13:00
+                                    </div>
+                                </div>
+                                <div class="mailing-table__cell-wrapper_second">
+                                    <div class="mailing-table__cell">
+                                        Список телефонов
+                                    </div>
+                                    <div class="mailing-table__cell">
+                                        <button
+                                            class="mailing-table__trash-button"
+                                            type="button"
+                                        >
+                                            <span class="js-icon-trash"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mailing-table__row-text-block">
+                                <span class="mailing-table__row-text"
+                                    >💅 Программа SONLINE для салона за *367
+                                    рублей в месяц*. ✨ ✔️ Программа учета
+                                    Онлайн запись ✔️ Лояльность ✔️ Другие модули
+                                    Хотите получить консультацию? *Отправьте ОК
+                                    в ответ*!</span
+                                >
+                                <span
+                                    class="mailing-table__row-status mailing-table__row-status_active"
+                                >
+                                    <span class="js-icon-hourglass"></span>
+                                    До отправки 4 месяца
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mailing-table__row-wrapper">
+                            <div class="mailing-table__row">
+                                <div class="mailing-table__cell-wrapper_first">
+                                    <div class="mailing-table__cell">
+                                        252603
+                                    </div>
+                                    <div class="mailing-table__cell">
+                                        18.08.2024, 13:00
+                                    </div>
+                                </div>
+                                <div class="mailing-table__cell-wrapper_second">
+                                    <div class="mailing-table__cell">
+                                        Список телефонов
+                                    </div>
+                                    <div class="mailing-table__cell"></div>
+                                </div>
+                            </div>
+                            <div class="mailing-table__row-text-block">
+                                <span class="mailing-table__row-text"
+                                    >💅 Программа SONLINE для салона за *367
+                                    рублей в месяц*. ✨ ✔️ Программа учета
+                                    Онлайн запись ✔️ Лояльность ✔️ Другие модули
+                                    Хотите получить консультацию? *Отправьте ОК
+                                    в ответ*!</span
+                                >
+                                <span
+                                    class="mailing-table__row-status mailing-table__row-status_completed"
+                                >
+                                    <span class="js-icon-ok"></span>
+                                    Завершена 18.08.2024, 13:03:02
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mailing-table__row-wrapper">
+                            <div class="mailing-table__row">
+                                <div class="mailing-table__cell-wrapper_first">
+                                    <div class="mailing-table__cell">
+                                        252602
+                                    </div>
+                                    <div class="mailing-table__cell">
+                                        15.07.2024, 13:00
+                                    </div>
+                                </div>
+                                <div class="mailing-table__cell-wrapper_second">
+                                    <div class="mailing-table__cell">
+                                        Список телефонов
+                                    </div>
+                                    <div class="mailing-table__cell"></div>
+                                </div>
+                            </div>
+                            <div class="mailing-table__row-text-block">
+                                <span class="mailing-table__row-text"
+                                    >💅 Программа SONLINE для салона за *367
+                                    рублей в месяц*. ✨ ✔️ Программа учета
+                                    Онлайн запись ✔️ Лояльность ✔️ Другие модули
+                                    Хотите получить консультацию? *Отправьте ОК
+                                    в ответ*!</span
+                                >
+                                <span
+                                    class="mailing-table__row-status mailing-table__row-status_completed"
+                                >
+                                    <span class="js-icon-ok"></span>
+                                    Завершена 15.07.2024, 13:09:25
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section js-new-mail-section none">
+                    <form class="new-mail-form js-new-mail js-form">
+                        <div class="new-mail-form__dates">
+                            <div
+                                class="new-mail-form__block new-mail-form__date"
+                            >
+                                <span class="new-mail-form__label"
+                                    >Дата рассылки</span
+                                >
+                                <input
+                                    class="form-input new-mail-form__date-input"
+                                    type="date"
+                                />
+                            </div>
+                            <div
+                                class="new-mail-form__block new-mail-form__time"
+                            >
+                                <span class="new-mail-form__label">
+                                    Время начала
+                                </span>
+                                <input
+                                    class="form-input new-mail-form__time-input"
+                                    type="time"
+                                />
+                                <span class="new-mail-form__label_addition"
+                                    >Мин. +1 ч от текущего</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="new-mail-form__block new-mail-form__image-block js-form-image-block"
+                        >
+                            <span class="new-mail-form__label"
+                                >Ссылка на картинку</span
+                            >
+                            <input
+                                class="form-input"
+                                type="url"
+                                placeholder="https://example.ru/image.jpg"
+                            />
+                        </div>
+                        <div
+                            class="new-mail-form__block new-mail-form__text-block"
+                        >
+                            <span class="new-mail-form__label"
+                                >Текст рассылки</span
+                            >
+                            <textarea
+                                class="form-input form-input_textarea"
+                                placeholder="Используйте эмодзи, перенос строк, гиперссылки"
+                                rows="7"
+                            ></textarea>
+                        </div>
+                        <div
+                            class="new-mail-form__block new-mail-form__tel-block"
+                        >
+                            <span class="new-mail-form__label"
+                                >Телефоны получателей
+                                <span
+                                    class="new-mail-form__label-number js-form-tel-limit"
+                                    >0/1000</span
+                                ></span
+                            >
+                            <div class="new-mail-form__tel-input-wrapper">
+                                <div
+                                    class="new-mail-form__tel-lines js-form-tel-lines"
+                                ></div>
+                                <textarea
+                                    class="new-mail-form__tel-input js-form-tel-input"
+                                    placeholder="Каждый телефон с новой строки. Можно скопировать колонку из Excel или Google Таблицы. Максимум 1000 номеров."
+                                    rows="10"
+                                ></textarea>
+                            </div>
+                            <span class="new-mail-form__label-additional"
+                                >Каждый телефон с новой строки. Можно
+                                скопировать колонку из Excel или Google Таблицы.
+                                Максимум 1000 номеров.</span
+                            >
+                        </div>
+                        <div class="new-mail-form__rules-block">
+                            <div
+                                class="new-mail-form__rules-checkbox new-mail-form__rules-checkbox_hover js-form-rule-checkbox"
+                            >
+                                <div
+                                    class="new-mail-form__rules-checkbox-icon js-icon-ok"
+                                ></div>
+                            </div>
+                            <label
+                                class="new-mail-form__rules-checkbox-text js-form-rule-checkbox-label"
+                            >
+                                <input
+                                    class="new-mail-form__checkbox hidden js-form-rule-checkbox-input"
+                                    type="checkbox"
+                                />
+                                <span
+                                    >Я подтверждаю, что ознакомлен(а) с
+                                    правилами рассылок, обязуюсь соблюдать
+                                    законодательство РФ и всю ответственность
+                                    беру на себя.</span
+                                >
+                                <span
+                                    >Рассылка отправляется с 9:30 до 18:00 по
+                                    московскому времени. Сообщения рассылаются
+                                    со скоростью 2 сообщения в минуту. При
+                                    отправке рассылки через WhatsApp более чем
+                                    250 клиентам за один раз вероятность
+                                    блокировки возрастает до 90%.</span
+                                >
+                            </label>
+                        </div>
+                        <div class="new-mail-form__submit-block">
+                            <button
+                                class="button button-s button-secondary"
+                                type="submit"
+                            >
+                                Создать рассылку
+                            </button>
+                            <button
+                                class="button button-s button-primary"
+                                type="submit"
+                            >
+                                Создать рассылку
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <div class="popup none js-popup">
+                <div class="popup__overlay js-popup-overlay"></div>
+                <div class="popup__overflow" tabindex="-1">
+                    <div class="popup__content">
+                        <h3 class="popup__title">Авторизация телефона</h3>
+                        <p class="popup__text">
+                            Для того чтобы отправлялись сообщения из вашей CRM
+                            клиентам в WhatsApp, нужно чтобы ваш рабочий телефон
+                            был авторизован в Wazapa.
+                        </p>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">1</span>
+                                <span class="popup__list-text"
+                                    >Откройте WhatsApp на телефоне.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">2</span>
+                                <span class="popup__list-text"
+                                    >Нажмите Меню или Настройки.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">3</span>
+                                <span class="popup__list-text"
+                                    >Нажмите на пункт Связанные
+                                    устройства.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">4</span>
+                                <span class="popup__list-text"
+                                    >Нажмите на кнопку Привязка
+                                    устройства.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">5</span>
+                                <span class="popup__list-text"
+                                    >Наведите камеру на экран, чтобы считать код
+                                    ниже.</span
+                                >
+                            </li>
+                        </ul>
+                        <div class="popup__media">
+                            <a href="/" class="popup__media-block">
+                                <div
+                                    class="popup__media-icon js-icon-picture"
+                                ></div>
+                                <div class="popup__link-block">
+                                    <span class="popup__media-link"
+                                        >Инструкция с картинками</span
+                                    >
+                                    <span class="popup__media-text"
+                                        >в базе знаний help.wazapa.ru</span
+                                    >
+                                </div>
+                            </a>
+                            <a href="/" class="popup__media-block">
+                                <div
+                                    class="popup__media-icon js-icon-video"
+                                ></div>
+                                <div class="popup__link-block">
+                                    <span class="popup__media-link"
+                                        >Видеоинструкция</span
+                                    >
+                                    <span class="popup__media-text"
+                                        >на YouTube</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                        <div class="popup__qr-block">
+                            <img class="popup__qr" src="qr.svg" />
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button popup__close-button js-close-popup"
+                        type="button"
+                    >
+                        <span class="js-icon-cross"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

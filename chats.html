@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Добро пожаловать</title>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="layout">
+            <header class="header">
+                <div class="header__top">
+                    <div class="name-block">
+                        <div class="name-wrapper">
+                            <h1 class="name">WCOLD 1 для рассылок W</h1>
+                            <a class="mail" href="mailto:wcold@wazapa.ru"
+                                >wcold@wazapa.ru</a
+                            >
+                        </div>
+                        <div class="auth auth_ok js-auth-status-ok">
+                            <div class="auth__icon js-icon-ok"></div>
+                            <span class="auth__text">Телефон авторизован</span>
+                        </div>
+                        <div
+                            class="auth auth_not-ok none js-auth-status-not-ok"
+                        >
+                            <span class="auth__icon js-icon-record"></span>
+                            <span class="auth__text"
+                                >Телефон не авторизован</span
+                            >
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button sign-out-button tooltip-trigger js-tooltip-trigger"
+                        type="button"
+                    >
+                        <div class="js-icon-sign"></div>
+                        <span class="tooltip js-tooltip">Выйти</span>
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <nav class="nav">
+                    <a class="nav_logo-link" href="index.html"
+                        ><img class="nav__logo-icon" src="./logo.svg"
+                    /></a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="index.html">
+                                <span
+                                    class="nav__page-icon js-icon-home"
+                                ></span>
+                                <span>Главная</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="licenses.html">
+                                <span
+                                    class="nav__page-icon js-icon-list"
+                                ></span>
+                                <span>Лицензии</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="payments.html">
+                                <span
+                                    class="nav__page-icon js-icon-files"
+                                ></span>
+                                <span class="nav__page-link-text_payments"
+                                    >Платежи<span> и документы</span></span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a
+                                class="nav__page-link nav__page-link_active"
+                                href="chats.html"
+                            >
+                                <span
+                                    class="nav__page-icon js-icon-chats"
+                                ></span>
+                                <span>Чат-боты</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="mailing.html">
+                                <span
+                                    class="nav__page-icon js-icon-chat-with-text"
+                                ></span>
+                                <span>Рассылки</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <section class="section js-chat-bot-main-section">
+                    <h2 class="section-main-title">Чат-боты</h2>
+                </section>
+                <section class="section js-chat-bot-main-section">
+                    <h2 class="section-title">Подключенные</h2>
+                    <div class="section-block">
+                        <div class="card card-chat">
+                            <div class="card-header">
+                                <div class="card-header__block-title">
+                                    <span class="card-header__title"
+                                        >Доп. продажи «Чай/кофе»</span
+                                    >
+                                    <span class="card-header__text"
+                                        >Эта лицензия предоставляет право на
+                                        использование чат-бота в сети WhatsApp
+                                        для автоматизации и оптимизации
+                                        взаимодействия с пользователями.</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="card__chat-button">
+                                <button
+                                    class="button button-secondary button-s js-chat-bot-settings-section-button"
+                                >
+                                    Настроить
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card card-chat">
+                            <div class="card-header">
+                                <div class="card-header__block-title">
+                                    <span class="card-header__title"
+                                        >Напоминание о визите</span
+                                    >
+                                    <span class="card-header__text"
+                                        >Эта лицензия предоставляет право на
+                                        использование чат-бота в сети
+                                        WhatsApp.</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="card__chat-button">
+                                <button
+                                    class="button button-secondary button-s js-chat-bot-settings-section-button"
+                                >
+                                    Настроить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section js-chat-bot-main-section">
+                    <h2 class="section-title">Доступные</h2>
+                    <div class="slider js-slider">
+                        <div class="slider-list js-slider-list">
+                            <div
+                                class="section-block slider-track js-slider-track"
+                            >
+                                <div class="slide js-slide">
+                                    <div
+                                        class="card card-yellow card-chat js-card"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__title"
+                                                    >Отменили запись и не
+                                                    записались</span
+                                                >
+                                                <span class="card-header__text"
+                                                    >Напоминает клиентам,
+                                                    которые отменили запись,
+                                                    но не сделали новую,
+                                                    о возможности выбрать новое
+                                                    время для визита</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__chat-button">
+                                            <button
+                                                class="button button-primary button-s js-chat-bot-connect-section-button"
+                                            >
+                                                Подключить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide js-slide">
+                                    <div
+                                        class="card card-green card-special js-card"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__title"
+                                                    >Потерянные клиенты</span
+                                                >
+                                                <span class="card-header__text"
+                                                    >Автоматически связывается с
+                                                    клиентами, которые давно не
+                                                    посещали салон, предлагая
+                                                    специальные акции или
+                                                    услуги, чтобы вернуть
+                                                    их</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__chat-button">
+                                            <button
+                                                class="button button-primary button-s js-chat-bot-connect-section-button"
+                                            >
+                                                Подключить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide js-slide">
+                                    <div
+                                        class="card card-blue card-special js-card"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__title"
+                                                    >Доп.продажи чай/кофе</span
+                                                >
+                                                <span class="card-header__text"
+                                                    >Предлагает клиентам,
+                                                    находящимся в салоне,
+                                                    приобрести дополнительные
+                                                    напитки, такие как чай или
+                                                    кофе</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__chat-button">
+                                            <button
+                                                class="button button-primary button-s js-chat-bot-connect-section-button"
+                                            >
+                                                Подключить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide js-slide">
+                                    <div
+                                        class="card card-violet card-special js-card"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__title"
+                                                    >Напоминание о визите</span
+                                                >
+                                                <span class="card-header__text"
+                                                    >Напоминает клиентам о
+                                                    предстоящем визите в салон
+                                                    за день или несколько часов
+                                                    до назначенного
+                                                    времени</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__chat-button">
+                                            <button
+                                                class="button button-primary button-s js-chat-bot-connect-section-button"
+                                            >
+                                                Подключить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="slider-pagination none js-slider-pagination"
+                        ></div>
+                    </div>
+                </section>
+                <section
+                    class="section support-section js-chat-bot-main-section"
+                >
+                    <h2 class="section-title">Техподдержка</h2>
+                    <p class="support-section__question-text">
+                        У вас есть личный чат с техподдержкой. Если его нет,
+                        напишите нам на
+                        <a
+                            class="support-section__question-link"
+                            href="mailto:help@wazapa.ru"
+                            >help@wazapa.ru</a
+                        >, мы его создадим.
+                    </p>
+                    <button
+                        class="button button-secondary button-s support-section__question-button"
+                        type="button"
+                    >
+                        <span
+                            class="support-section__question-log js-icon-question"
+                        ></span>
+                        <span>Задать вопрос</span>
+                    </button>
+                </section>
+
+                <section class="section js-chat-bot-connect-section none">
+                    <button
+                        type="button"
+                        class="chat-bot-back-button js-chat-bot-main-section-button"
+                    >
+                        <span
+                            class="chat-bot-back-icon js-icon-arrow-left"
+                        ></span>
+                        Назад к списку чат-ботов
+                    </button>
+                    <h2 class="section-main-title">
+                        Чат-бот «Отменили запись и не записались»
+                    </h2>
+                    <div class="chat-bot-subtitle">
+                        Бот напоминает клиентам, которые отменили запись, но не
+                        сделали новую, о возможности выбрать новое время для
+                        визита
+                    </div>
+                    <div class="chat-bot-connect-controls">
+                        <button
+                            class="button button-s button-primary"
+                            type="button"
+                        >
+                            Купить
+                        </button>
+                    </div>
+                </section>
+
+                <section class="section js-chat-bot-settings-section none">
+                    <button
+                        type="button"
+                        class="chat-bot-back-button js-chat-bot-main-section-button"
+                    >
+                        <span
+                            class="chat-bot-back-icon js-icon-arrow-left"
+                        ></span>
+                        Назад к списку чат-ботов
+                    </button>
+                    <h2 class="section-main-title">Чат-бот «Маяк»</h2>
+                    <div class="chat-bot-subtitle">
+                        Бот напоминает клиентам, которые отменили запись, но не
+                        сделали новую, о возможности выбрать новое время для
+                        визита
+                    </div>
+                    <div class="toggle-wrapper">
+                        <div class="toggle">
+                            <input
+                                type="checkbox"
+                                id="toggle-bot-activate"
+                                name="toggle-bot-activate"
+                                checked
+                            />
+                            <label
+                                class="toggle__label"
+                                for="toggle-bot-activate"
+                                >Бот включен</label
+                            >
+                        </div>
+                    </div>
+                </section>
+                <section class="section js-chat-bot-settings-section none">
+                    <div class="accordion js-accordion">
+                        <div class="accordion__item accordion__item_show">
+                            <div class="accordion__header js-accordion-header">
+                                Как подключить
+                                <span
+                                    class="accordion__header-icon js-icon-chevron"
+                                ></span>
+                            </div>
+                            <div class="accordion__body">
+                                <div class="accordion__content">
+                                    <ul class="popup__list">
+                                        <li class="popup__list-item">
+                                            <span class="popup__list-number"
+                                                >1</span
+                                            >
+                                            <span class="popup__list-text"
+                                                >Нажмите на ссылку
+                                                <a href="/">@BossMayakBot</a> и
+                                                перейдите на страницу бота в
+                                                Telegram.</span
+                                            >
+                                        </li>
+                                        <li class="popup__list-item">
+                                            <span class="popup__list-number"
+                                                >2</span
+                                            >
+                                            <span class="popup__list-text"
+                                                >Если ссылка не открывается, то
+                                                можно в поиске в Telegram ввести
+                                                слово BossMayakBot, в списке
+                                                результатов появится бот
+                                                <a href="/">@BossMayakBot</a
+                                                >.</span
+                                            >
+                                        </li>
+                                        <li class="popup__list-item">
+                                            <span class="popup__list-number"
+                                                >3</span
+                                            >
+                                            <span class="popup__list-text"
+                                                >Зайдите в его чат и нажмите на
+                                                кнопку Start.</span
+                                            >
+                                        </li>
+                                        <li class="popup__list-item">
+                                            <span class="popup__list-number"
+                                                >4</span
+                                            >
+                                            <span class="popup__list-text"
+                                                >Внизу слева нажмите на кнопку
+                                                Меню, там выберите пункт «Узнать
+                                                свой ID», в результате бот
+                                                напишет ваш ID в Telegram.</span
+                                            >
+                                        </li>
+                                        <li class="popup__list-item">
+                                            <span class="popup__list-number"
+                                                >5</span
+                                            >
+                                            <span class="popup__list-text"
+                                                >Скопируйте ID и вставьте в поле
+                                                ниже. Обязательно нажмите на
+                                                кнопку Активировать на этой
+                                                странице внизу.</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section js-chat-bot-settings-section none">
+                    <h2 class="chat-bot-title-settings">Настройки</h2>
+                    <form class="chat-bot-form js-form">
+                        <div class="chat-bot-form-block chat-bot-form-block-id">
+                            <span class="new-mail-form__label"
+                                >Ваш ID в Telegram</span
+                            >
+                            <input class="form-input" type="text" />
+                        </div>
+                        <div
+                            class="chat-bot-form-block chat-bot-form-block-time"
+                        >
+                            <div
+                                class="new-mail-form__block new-mail-form__date"
+                            >
+                                <span class="new-mail-form__label"
+                                    >Дата рассылки</span
+                                >
+                                <input
+                                    class="form-input new-mail-form__date-input"
+                                    type="date"
+                                />
+                            </div>
+                            <div
+                                class="new-mail-form__block new-mail-form__time"
+                            >
+                                <span class="new-mail-form__label">
+                                    Время начала
+                                </span>
+                                <input
+                                    class="form-input new-mail-form__time-input"
+                                    type="time"
+                                />
+                                <span class="new-mail-form__label_addition"
+                                    >Мин. +1 ч от текущего</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="chat-bot-form-block chat-bot-form-block-select"
+                        >
+                            <div class="select-wrapper">
+                                <div class="select-title">
+                                    Сколько дней назад отменили запись #1
+                                </div>
+                                <select class="select" name="select1">
+                                    <option value="sevenDays" selected>
+                                        7 дней
+                                    </option>
+                                    <option value="tenDays">10 дней</option>
+                                    <option value="fourteenDays">
+                                        14 дней
+                                    </option>
+                                </select>
+                                <span
+                                    class="select-arrow js-icon-select-arrow"
+                                ></span>
+                            </div>
+                            <div class="select-wrapper">
+                                <div class="select-title">
+                                    Сколько дней назад отменили запись #2
+                                </div>
+                                <select class="select" name="select2">
+                                    <option value="" selected hidden>
+                                        Не обязательно
+                                    </option>
+                                    <option value="sevenDays">7 дней</option>
+                                    <option value="tenDays">10 дней</option>
+                                    <option value="fourteenDays">
+                                        14 дней
+                                    </option>
+                                </select>
+                                <span
+                                    class="select-arrow js-icon-select-arrow"
+                                ></span>
+                            </div>
+                        </div>
+                        <div
+                            class="chat-bot-form-block chat-bot-form-block-every-time"
+                        >
+                            <div
+                                class="new-mail-form__block new-mail-form__time"
+                            >
+                                <span class="new-mail-form__label">
+                                    Отправлять каждый день
+                                </span>
+                                <input
+                                    class="form-input new-mail-form__time-input"
+                                    type="time"
+                                />
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <div class="chat-bot-image-input-block">
+                                <span class="new-mail-form__label"
+                                    >Ссылка на картинку</span
+                                >
+                                <input
+                                    class="form-input form-input_error"
+                                    type="text"
+                                    placeholder="https://example.ru/image.jpg"
+                                />
+                                <span class="form-input-error-text"
+                                    >Необходимо указать параметр</span
+                                >
+                            </div>
+                            <div class="chat-bot-image-input-block">
+                                <span class="new-mail-form__label"
+                                    >Ссылка на картинку</span
+                                >
+                                <input
+                                    class="form-input form-input_error"
+                                    type="text"
+                                    placeholder="https://example.ru/image.jpg"
+                                    value="25.09.2024"
+                                />
+                                <span class="form-input-error-text"
+                                    >Необходимо указать параметр</span
+                                >
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <h2 class="section-title">Текст</h2>
+                            <div class="chat-bot-subtitle">
+                                Бот напоминает клиентам, которые отменили
+                                запись, но не сделали новую, о возможности
+                                выбрать новое время для визита
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <h2 class="section-title">Switches</h2>
+                            <div class="toggle-wrapper">
+                                <div class="chat-bot-toggle-block">
+                                    <div class="toggle disabled">
+                                        <input
+                                            type="checkbox"
+                                            id="toggle1"
+                                            name="toggle-name1"
+                                        />
+                                        <label
+                                            class="toggle__label"
+                                            for="toggle1"
+                                            >Не подтвержденные записи на
+                                            сегодня</label
+                                        >
+                                    </div>
+                                    <div class="toggle-time disabled">
+                                        <span class="toggle-time-text"
+                                            >Данные на</span
+                                        >
+                                        <input
+                                            class="form-input new-mail-form__time-input"
+                                            type="time"
+                                            value="12:00"
+                                            disabled
+                                        />
+                                    </div>
+                                </div>
+                                <div class="chat-bot-toggle-block">
+                                    <div class="toggle">
+                                        <input
+                                            type="checkbox"
+                                            id="toggle2"
+                                            name="toggle-name2"
+                                            checked
+                                        />
+                                        <label
+                                            class="toggle__label"
+                                            for="toggle2"
+                                            >Количество не подтвержденных
+                                            клиентов на завтра</label
+                                        >
+                                    </div>
+                                    <div class="toggle-time">
+                                        <span class="toggle-time-text"
+                                            >Данные на</span
+                                        >
+                                        <input
+                                            class="form-input new-mail-form__time-input"
+                                            type="time"
+                                            value="12:00"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="toggle">
+                                    <input
+                                        type="checkbox"
+                                        id="toggle3"
+                                        name="toggle-name3"
+                                        checked
+                                    />
+                                    <label class="toggle__label" for="toggle3"
+                                        >Количество не подтвержденных клиентов
+                                        на завтра</label
+                                    >
+                                </div>
+                                <div class="toggle">
+                                    <input
+                                        type="checkbox"
+                                        id="toggle4"
+                                        name="toggle-name4"
+                                        checked
+                                    />
+                                    <label class="toggle__label" for="toggle4"
+                                        >Просмотр более 5 карточек клиентов в
+                                        течении 15 минут</label
+                                    >
+                                </div>
+                                <div class="toggle">
+                                    <input
+                                        type="checkbox"
+                                        id="toggle5"
+                                        name="toggle-name5"
+                                        checked
+                                    />
+                                    <label class="toggle__label" for="toggle5"
+                                        >Отрицательный отзыв клиента</label
+                                    >
+                                </div>
+                                <div class="toggle error">
+                                    <input
+                                        type="checkbox"
+                                        id="toggle6"
+                                        name="toggle-name6"
+                                    />
+                                    <label class="toggle__label" for="toggle6"
+                                        >Клиент отменил запись на сегодня и не
+                                        перезаписался<span
+                                            class="toggle-description"
+                                            >Необходимо включить параметр</span
+                                        ></label
+                                    >
+                                </div>
+                                <div class="toggle">
+                                    <input
+                                        type="checkbox"
+                                        id="toggle7"
+                                        name="toggle-name7"
+                                        checked
+                                    />
+                                    <label class="toggle__label" for="toggle7"
+                                        >Клиент отменил запись в остальные дни и
+                                        не перезаписался</label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <h2 class="section-title">Checkboxes</h2>
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input
+                                        type="checkbox"
+                                        id="checkbox1"
+                                        name="checkbox-name1"
+                                    />
+                                    <label
+                                        class="checkbox__label"
+                                        for="checkbox1"
+                                        >Добавлен расход<span
+                                            class="checkbox__icon-ok js-icon-check"
+                                        ></span
+                                    ></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input
+                                        type="checkbox"
+                                        id="checkbox2"
+                                        name="checkbox-name2"
+                                        checked
+                                    />
+                                    <label
+                                        class="checkbox__label"
+                                        for="checkbox2"
+                                        >Добавлены деньги в дополнительную
+                                        кассу<span
+                                            class="checkbox__icon-ok js-icon-check"
+                                        ></span
+                                    ></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input
+                                        class="error"
+                                        type="checkbox"
+                                        id="checkbox3"
+                                        name="checkbox-name3"
+                                    />
+                                    <label
+                                        class="checkbox__label"
+                                        for="checkbox3"
+                                        >Добавлен / погашен долг<span
+                                            class="checkbox__icon-ok js-icon-check"
+                                        ></span
+                                        ><span class="checkbox__sub-title"
+                                            >Необходимо выбрать параметр</span
+                                        ></label
+                                    >
+                                </div>
+                                <div class="checkbox">
+                                    <input
+                                        class="error"
+                                        type="checkbox"
+                                        id="checkbox4"
+                                        name="checkbox-name4"
+                                        checked
+                                    />
+                                    <label
+                                        class="checkbox__label"
+                                        for="checkbox4"
+                                        >Добавлен / погашен долг<span
+                                            class="checkbox__icon-ok js-icon-check"
+                                        ></span
+                                        ><span class="checkbox__sub-title"
+                                            >Необходимо отключить параметр</span
+                                        ></label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <h2 class="section-title">Radio buttons</h2>
+                            <div class="radio-wrapper">
+                                <div class="radio">
+                                    <input
+                                        type="radio"
+                                        id="radio1"
+                                        name="radio-name1"
+                                    />
+                                    <label class="radio__label" for="radio1"
+                                        >Добавлен расход
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <input
+                                        type="radio"
+                                        id="radio2"
+                                        name="radio-name1"
+                                        checked
+                                    />
+                                    <label class="radio__label" for="radio2"
+                                        >Добавлены деньги в дополнительную
+                                        кассу</label
+                                    >
+                                </div>
+                                <div class="radio">
+                                    <input
+                                        class="error"
+                                        type="radio"
+                                        id="radio3"
+                                        name="radio-name1"
+                                    />
+                                    <label class="radio__label" for="radio3"
+                                        >Добавлен / погашен долг<span
+                                            class="radio__description"
+                                            >Необходимо выбрать один из
+                                            вариантов</span
+                                        ></label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <div
+                                class="new-mail-form__block new-mail-form__text-block"
+                            >
+                                <span class="new-mail-form__label"
+                                    >Текст рассылки</span
+                                >
+                                <textarea
+                                    class="form-input form-input_textarea"
+                                    placeholder="Используйте эмодзи, перенос строк, гиперссылки"
+                                    rows="7"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <div
+                                class="new-mail-form__block new-mail-form__tel-block"
+                            >
+                                <span class="new-mail-form__label"
+                                    >Телефоны получателей
+                                    <span
+                                        class="new-mail-form__label-number js-form-tel-limit"
+                                        >0/1000</span
+                                    ></span
+                                >
+                                <div class="new-mail-form__tel-input-wrapper">
+                                    <div
+                                        class="new-mail-form__tel-lines js-form-tel-lines"
+                                    ></div>
+                                    <textarea
+                                        class="new-mail-form__tel-input js-form-tel-input"
+                                        placeholder="Каждый телефон с новой строки. Можно скопировать колонку из Excel или Google Таблицы. Максимум 1000 номеров."
+                                        rows="10"
+                                    ></textarea>
+                                </div>
+                                <span class="new-mail-form__label-additional"
+                                    >Каждый телефон с новой строки. Можно
+                                    скопировать колонку из Excel или Google
+                                    Таблицы. Максимум 1000 номеров.</span
+                                >
+                            </div>
+                        </div>
+                        <div class="chat-bot-form-block">
+                            <div class="new-mail-form__rules-block">
+                                <div
+                                    class="new-mail-form__rules-checkbox new-mail-form__rules-checkbox_hover js-form-rule-checkbox"
+                                >
+                                    <div
+                                        class="new-mail-form__rules-checkbox-icon js-icon-ok"
+                                    ></div>
+                                </div>
+                                <label
+                                    class="new-mail-form__rules-checkbox-text js-form-rule-checkbox-label"
+                                >
+                                    <input
+                                        class="new-mail-form__checkbox hidden js-form-rule-checkbox-input"
+                                        type="checkbox"
+                                    />
+                                    <span
+                                        >Я подтверждаю, что ознакомлен(а) с
+                                        правилами рассылок, обязуюсь соблюдать
+                                        законодательство РФ и всю
+                                        ответственность беру на себя.</span
+                                    >
+                                    <span
+                                        >Рассылка отправляется с 9:30 до 18:00
+                                        по московскому времени. Сообщения
+                                        рассылаются со скоростью 2 сообщения в
+                                        минуту. При отправке рассылки через
+                                        WhatsApp более чем 250 клиентам за один
+                                        раз вероятность блокировки возрастает до
+                                        90%.</span
+                                    >
+                                </label>
+                            </div>
+                        </div>
+                        <div
+                            class="chat-bot-form-block chat-bot-form-block-controls"
+                        >
+                            <button
+                                class="button button-s button-secondary"
+                                type="submit"
+                            >
+                                Создать рассылку
+                            </button>
+                            <button
+                                class="button button-s button-primary"
+                                type="submit"
+                            >
+                                Создать рассылку
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <section class="section js-chat-bot-settings-section none">
+                    <div class="chat-bot-problem-block">
+                        <h2 class="section-title">Не нашли нужного сбытия?</h2>
+                        <div
+                            class="new-mail-form__block new-mail-form__text-block"
+                        >
+                            <span class="new-mail-form__label"
+                                >О каком событии вы хотите получать
+                                сообщения?</span
+                            >
+                            <textarea
+                                class="form-input form-input_textarea"
+                                rows="7"
+                            ></textarea>
+                        </div>
+                        <button
+                            class="button button-s button-primary chat-bot-problem-block-button"
+                            type="submit"
+                        >
+                            Отправить
+                        </button>
+                    </div>
+                </section>
+                <div class="auth__warning js-chat-bot-settings-section none">
+                    <span class="auth__warning-title">Ошибка отправки</span>
+                    <span class="auth__warning-text"
+                        >По техническим причинам мы не смогли принять Ваш запрос
+                        на добавление события «Общее время работы администратора
+                        в системе за день». Пожалуйста, отправьте его
+                        позже.</span
+                    >
+                </div>
+                <div
+                    class="auth__warning auth__warning-green js-chat-bot-settings-section none"
+                >
+                    <span class="auth__warning-title"
+                        >Ваш запрос отправлен</span
+                    >
+                    <span class="auth__warning-text"
+                        >Ваш запрос на добавление события «Общее время работы
+                        администратора в системе за день» отправлен. Мы
+                        постараемся добавить его в ближайшее время.</span
+                    >
+                </div>
+            </main>
+            <div class="popup none js-popup">
+                <div class="popup__overlay js-popup-overlay"></div>
+                <div class="popup__overflow" tabindex="-1">
+                    <div class="popup__content">
+                        <h3 class="popup__title">Авторизация телефона</h3>
+                        <p class="popup__text">
+                            Для того чтобы отправлялись сообщения из вашей CRM
+                            клиентам в WhatsApp, нужно чтобы ваш рабочий телефон
+                            был авторизован в Wazapa.
+                        </p>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">1</span>
+                                <span class="popup__list-text"
+                                    >Откройте WhatsApp на телефоне.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">2</span>
+                                <span class="popup__list-text"
+                                    >Нажмите Меню или Настройки.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">3</span>
+                                <span class="popup__list-text"
+                                    >Нажмите на пункт Связанные
+                                    устройства.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">4</span>
+                                <span class="popup__list-text"
+                                    >Нажмите на кнопку Привязка
+                                    устройства.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">5</span>
+                                <span class="popup__list-text"
+                                    >Наведите камеру на экран, чтобы считать код
+                                    ниже.</span
+                                >
+                            </li>
+                        </ul>
+                        <div class="popup__media">
+                            <a href="/" class="popup__media-block">
+                                <div
+                                    class="popup__media-icon js-icon-picture"
+                                ></div>
+                                <div class="popup__link-block">
+                                    <span class="popup__media-link"
+                                        >Инструкция с картинками</span
+                                    >
+                                    <span class="popup__media-text"
+                                        >в базе знаний help.wazapa.ru</span
+                                    >
+                                </div>
+                            </a>
+                            <a href="/" class="popup__media-block">
+                                <div
+                                    class="popup__media-icon js-icon-video"
+                                ></div>
+                                <div class="popup__link-block">
+                                    <span class="popup__media-link"
+                                        >Видеоинструкция</span
+                                    >
+                                    <span class="popup__media-text"
+                                        >на YouTube</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                        <div class="popup__qr-block">
+                            <img class="popup__qr" src="qr.svg" />
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button popup__close-button js-close-popup"
+                        type="button"
+                    >
+                        <span class="js-icon-cross"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

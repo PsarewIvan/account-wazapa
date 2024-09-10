@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Добро пожаловать</title>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="layout">
+            <header class="header">
+                <div class="header__top">
+                    <div class="name-block">
+                        <div class="name-wrapper">
+                            <h1 class="name">WCOLD 1 для рассылок W</h1>
+                            <a class="mail" href="mailto:wcold@wazapa.ru"
+                                >wcold@wazapa.ru</a
+                            >
+                        </div>
+                        <div class="auth auth_ok none js-auth-status-ok">
+                            <div class="auth__icon js-icon-ok"></div>
+                            <span class="auth__text">Телефон авторизован</span>
+                        </div>
+                        <div class="auth auth_not-ok js-auth-status-not-ok">
+                            <span class="auth__icon js-icon-record"></span>
+                            <span class="auth__text"
+                                >Телефон не авторизован</span
+                            >
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button sign-out-button tooltip-trigger js-tooltip-trigger"
+                        type="button"
+                    >
+                        <div class="js-icon-sign"></div>
+                        <span class="tooltip js-tooltip">Выйти</span>
+                    </button>
+                </div>
+                <div class="auth__warning">
+                    <span class="auth__warning-title"
+                        >Телефон не авторизован</span
+                    >
+                    <span class="auth__warning-text"
+                        >Внимание, сообщения не отправляются. Необходимо
+                        привязать рабочий телефон.</span
+                    >
+                    <button
+                        class="button button-secondary button-s auth__warning-button js-auth-button"
+                        type="button"
+                    >
+                        Авторизовать
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <nav class="nav">
+                    <a class="nav_logo-link" href="index.html"
+                        ><img class="nav__logo-icon" src="./logo.svg"
+                    /></a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a
+                                class="nav__page-link nav__page-link_active"
+                                href="index.html"
+                            >
+                                <span
+                                    class="nav__page-icon js-icon-home"
+                                ></span>
+                                <span>Главная</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="licenses.html">
+                                <span
+                                    class="nav__page-icon js-icon-list"
+                                ></span>
+                                <span>Лицензии</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="payments.html">
+                                <span
+                                    class="nav__page-icon js-icon-files"
+                                ></span>
+                                <span class="nav__page-link-text_payments"
+                                    >Платежи<span> и документы</span></span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="chats.html">
+                                <span
+                                    class="nav__page-icon js-icon-chats"
+                                ></span>
+                                <span>Чат-боты</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="mailing.html">
+                                <span
+                                    class="nav__page-icon js-icon-chat-with-text"
+                                ></span>
+                                <span>Рассылки</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <section class="section">
+                    <h2 class="section-title">Мои лицензии</h2>
+                    <div class="section-block">
+                        <div class="card card-license">
+                            <div class="card-header">
+                                <div class="card-header__block-title">
+                                    <span class="card-header__text"
+                                        >Лицензия</span
+                                    >
+                                    <span class="card-header__title"
+                                        >Триггерные</span
+                                    >
+                                </div>
+                                <div class="card-header__date">
+                                    <span>3 мес</span>
+                                </div>
+                            </div>
+                            <span class="card__text card__text_active">
+                                <div class="js-icon-ok"></div>
+                                <span>Активна до 03.12.2023 г.</span>
+                            </span>
+                        </div>
+
+                        <div class="card card-license">
+                            <div class="card-header">
+                                <div class="card-header__block-title">
+                                    <span class="card-header__text"
+                                        >Лицензия</span
+                                    >
+                                    <span class="card-header__title"
+                                        >Массовые рассылки</span
+                                    >
+                                </div>
+                                <div class="card-header__date">
+                                    <span>1 мес</span>
+                                </div>
+                            </div>
+                            <span class="card__text card__text_expired">
+                                <div class="js-icon-warning"></div>
+                                <span>Истекает 10.09.2023 г.</span>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Специально для вас</h2>
+                    <div class="slider js-slider">
+                        <div class="slider-list js-slider-list">
+                            <div
+                                class="section-block slider-track js-slider-track"
+                            >
+                                <div class="slide js-slide">
+                                    <button
+                                        class="card card-blue card-special"
+                                        type="button"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__text"
+                                                    >Чат-бот</span
+                                                >
+                                                <span class="card-header__title"
+                                                    >Доп. продажи
+                                                    «Чай/кофе»</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__price-block">
+                                            <span class="card__price"
+                                                >900₽<span>/ мес</span></span
+                                            >
+                                            <div class="card__price-button">
+                                                <div
+                                                    class="card__price-icon js-icon-arrow"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="slide js-slide">
+                                    <button
+                                        class="card card-yellow card-special"
+                                        type="button"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__text"
+                                                    >Чат-бот</span
+                                                >
+                                                <span class="card-header__title"
+                                                    >Напоминание о визите</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__price-block">
+                                            <span class="card__price"
+                                                >1200₽<span>/ мес</span></span
+                                            >
+                                            <div class="card__price-button">
+                                                <div
+                                                    class="card__price-icon js-icon-arrow"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="slide js-slide">
+                                    <button
+                                        class="card card-green card-special"
+                                        type="button"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__text"
+                                                    >Чат-бот</span
+                                                >
+                                                <span class="card-header__title"
+                                                    >Потерянные клиенты</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__price-block">
+                                            <span class="card__price"
+                                                >500₽<span>/ мес</span></span
+                                            >
+                                            <div class="card__price-button">
+                                                <div
+                                                    class="card__price-icon js-icon-arrow"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="slide js-slide">
+                                    <button
+                                        class="card card-empty card-special"
+                                        type="button"
+                                    >
+                                        <div class="card-header">
+                                            <div
+                                                class="card-header__block-title"
+                                            >
+                                                <span class="card-header__title"
+                                                    >Все боты</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="card__price-block">
+                                            <div class="card__price-button">
+                                                <div
+                                                    class="card__price-icon js-icon-arrow"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="slider-pagination none js-slider-pagination"
+                        ></div>
+                    </div>
+                </section>
+                <section class="section support-section">
+                    <h2 class="section-title">Техподдержка</h2>
+                    <p class="support-section__question-text">
+                        У вас есть личный чат с техподдержкой. Если его нет,
+                        напишите нам на
+                        <a
+                            class="support-section__question-link"
+                            href="mailto:help@wazapa.ru"
+                            >help@wazapa.ru</a
+                        >, мы его создадим.
+                    </p>
+                    <button
+                        class="button button-secondary button-s support-section__question-button"
+                        type="button"
+                    >
+                        <span
+                            class="support-section__question-log js-icon-question"
+                        ></span>
+                        <span>Задать вопрос</span>
+                    </button>
+                </section>
+            </main>
+
+            <div class="popup none js-popup">
+                <div class="popup__overlay js-popup-overlay"></div>
+                <div class="popup__overflow" tabindex="-1">
+                    <div class="popup__content">
+                        <h3 class="popup__title">Авторизация телефона</h3>
+                        <p class="popup__text">
+                            Для того чтобы отправлялись сообщения из вашей CRM
+                            клиентам в WhatsApp, нужно чтобы ваш рабочий телефон
+                            был авторизован в Wazapa.
+                        </p>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">1</span>
+                                <span class="popup__list-text"
+                                    >Откройте WhatsApp на телефоне.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">2</span>
+                                <span class="popup__list-text"
+                                    >Нажмите Меню или Настройки.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">3</span>
+                                <span class="popup__list-text"
+                                    >Нажмите на пункт Связанные
+                                    устройства.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">4</span>
+                                <span class="popup__list-text"
+                                    >Нажмите на кнопку Привязка
+                                    устройства.</span
+                                >
+                            </li>
+                            <li class="popup__list-item">
+                                <span class="popup__list-number">5</span>
+                                <span class="popup__list-text"
+                                    >Наведите камеру на экран, чтобы считать код
+                                    ниже.</span
+                                >
+                            </li>
+                        </ul>
+                        <div class="popup__media">
+                            <a href="/" class="popup__media-block">
+                                <div
+                                    class="popup__media-icon js-icon-picture"
+                                ></div>
+                                <div class="popup__link-block">
+                                    <span class="popup__media-link"
+                                        >Инструкция с картинками</span
+                                    >
+                                    <span class="popup__media-text"
+                                        >в базе знаний help.wazapa.ru</span
+                                    >
+                                </div>
+                            </a>
+                            <a href="/" class="popup__media-block">
+                                <div
+                                    class="popup__media-icon js-icon-video"
+                                ></div>
+                                <div class="popup__link-block">
+                                    <span class="popup__media-link"
+                                        >Видеоинструкция</span
+                                    >
+                                    <span class="popup__media-text"
+                                        >на YouTube</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                        <div class="popup__qr-block">
+                            <img class="popup__qr" src="qr.svg" />
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button popup__close-button js-close-popup"
+                        type="button"
+                    >
+                        <span class="js-icon-cross"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
