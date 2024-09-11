@@ -347,7 +347,6 @@ body {
     justify-content: space-between;
     padding: 16px 16px 24px;
     width: 100%;
-    height: 100%;
     min-height: 124px;
     border: none;
     border-radius: 12px;
@@ -544,6 +543,7 @@ button.card-green:hover {
 /* SPECIAL CARD */
 .card-special {
     padding: 16px;
+    height: 100%;
 }
 
 .card-special .card-header {
@@ -682,6 +682,7 @@ button.card-green:hover {
 
 @media (max-width: 767px) {
     .layout {
+        overflow: hidden;
         padding: 24px 16px 112px;
     }
 }
