@@ -417,6 +417,7 @@ button.card-green:hover {
 .card-header__title {
     margin: 0;
     font-weight: 500;
+    color: var(--color-primary);
 }
 
 .card__price-select {
@@ -584,6 +585,7 @@ button.card-green:hover {
     font-family: var(--roboto);
     font-size: 20px;
     line-height: 32px;
+    color: var(--color-primary);
 }
 
 .card-special .card__price span {
@@ -1564,7 +1566,7 @@ body.modal-open {
 /* FORM INPUT  */
 .form-input {
     width: 100%;
-    min-height: 44px;
+    height: 44px;
     padding: 0 12px;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(0, 0, 0, 0.24);
@@ -1579,7 +1581,7 @@ body.modal-open {
 
 @media (max-width: 767px) {
     .form-input {
-        min-height: 48px;
+        height: 48px;
         font-size: 16px;
         line-height: 24px;
     }
@@ -1670,6 +1672,7 @@ body.modal-open {
     font-size: 12px;
     line-height: 16px;
     color: rgba(39, 42, 42, 0.72);
+    text-wrap: nowrap;
 }
 
 @media (max-width: 767px) {
@@ -1840,6 +1843,16 @@ body.modal-open {
 .new-mail-form__submit-block {
     display: flex;
     gap: 12px;
+}
+
+@media (max-width: 767px) {
+    .new-mail-form__submit-block {
+        flex-direction: column;
+    }
+
+    .new-mail-form__submit-block .button {
+        width: 100%;
+    }
 }
 
 /* CHAT-BOT connect */
